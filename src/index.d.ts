@@ -17,6 +17,3 @@ export { FXSignal } from "./util/FXSignal";
 export { LinkedList } from "./util/LinkedList";
 export { Rnd } from "./util/Rnd";
 
-import { FX } from "./FX";
-
-export const fx = new FX();

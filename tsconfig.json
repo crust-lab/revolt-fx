@@ -1,27 +1,13 @@
 {
   "compilerOptions": {
-    "sourceMap": true,
-    "module": "ESNext",
     "target": "ES6",
-    "experimentalDecorators": true,
-    "strictNullChecks": false,
-    "declaration": true,
+    "module": "CommonJS",
+    "outDir": "./dist",
     "rootDir": "./src",
-    "outDir": "./lib",
-    "strict": false,
-    "lib": [
-      "esnext",
-      "dom"
-    ],
-    "allowSyntheticDefaultImports": true,
-    "moduleResolution": "node"
+    "declaration": true,  // Tworzenie pliku definicji typu (.d.ts)
+    "esModuleInterop": true,
+    "skipLibCheck": true
   },
-  "compileOnSave": false,
-  "include": [
-    "src/**/*"
-  ],
-  "exclude": [
-    "node_modules",
-    "*/**.d.ts"
-  ]
+  "include": ["src/**/*","src"],
+   "exclude": ["node_modules"] 
 }
